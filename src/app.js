@@ -1,7 +1,7 @@
 var express =require('express')
 var cors = require('cors')
 
-var routes = require('./user/routes')
+var routes = require('./routes')
 
 var app = express()
 

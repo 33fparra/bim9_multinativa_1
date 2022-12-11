@@ -1,5 +1,5 @@
 var validator = require('validator')
-var Paciente = require('./model')
+var Paciente = require('../model/model')
 
 var fs = require('fs')
 var path = require('path')

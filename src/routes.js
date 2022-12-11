@@ -1,6 +1,6 @@
 var express = require('express')
-var controller = require('./controller')
-var upload = require('./multer_config')
+var controller = require('./controller/controller')
+var upload = require('./config/multer_config')
 var router = express.Router()
 
 router.get('/', (req, res)=>{return res.send('ruta de prueba')})

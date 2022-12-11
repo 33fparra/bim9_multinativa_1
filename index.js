@@ -1,5 +1,5 @@
 var mongoose = require('mongoose')
-var app = require('./app')
+var app = require('./src/app.js')
 
 var port = 3000 
 
