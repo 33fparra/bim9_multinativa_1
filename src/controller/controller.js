@@ -233,10 +233,10 @@ var controllers = {
             })
         }
 
-        var tempFilename = file.filename
+        var tempFilename = file.tempfilename
 
         if(id){
-            Paciente.findByIdAndUpdate({_id:id}, {fotoPersonal: tempFilename}, {new:true}, (err, paciente)=>{
+            Paciente.findOneAndUpdate({_id:id}, {fotoPersonal: tempFilename}, {new:true}, (err, paciente)=>{
                 if(err || !paciente){
                     return res.status(400).send({
                         status: 'error',
